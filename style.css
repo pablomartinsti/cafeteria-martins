@@ -1,0 +1,261 @@
+:root{
+
+    --cor-link:#FFDE59;
+    --border: 0.1rem solid #FFDE59;
+    font-size: 10px;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+body{
+    background: rgba(0, 0, 0, 0.89);
+}
+section{
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: var(--border);
+    background: rgb(0, 0, 0);
+}
+
+.header section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5em;
+    padding-bottom: 1.5rem;
+
+   
+}
+.logo{
+    width: 150px;
+    height: 120px;
+}
+.menu a {
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: white;
+    
+}
+.menu a:hover{
+    color: var(--cor-link);
+    border-bottom: var(--border);
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+}
+.pedido img{
+    margin: 1rem;
+    width: 30px;
+    cursor: pointer;
+}
+.pedido img:hover{
+    width: 40px;
+}
+.botão{
+    color: white;
+    background: var(--cor-link);
+    padding: 1rem 3rem;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 2rem;
+    border-radius: 10px;
+}
+.caixa-home{
+    background: url(./assets/Design\ sem\ nome.png);
+    background-position: center;
+    background-size: cover
+    ;
+}
+.caixa-home section{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+.home{
+    max-width: 60rem;
+}
+.home h3{
+    color: white;
+    font-size: 6rem;
+    
+}
+.home p{
+    color: white;
+    font-size:1.9rem;
+    font-weight: 100;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+.titulo{
+    font-size: 5rem;
+    color: var(--cor-link);
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 4rem;
+
+
+}
+.titulo span{
+    color: white;
+    text-transform: uppercase;
+}
+.img-sobre{
+    width: 600px;
+    padding: 2rem;
+}
+.caixa-sobre .sobre-nos{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background: rgba(46, 46, 46, 0.527);
+
+}
+.caixa-sobre .sobre-nos .sobre-conteudo{
+    padding: 4rem;
+
+}
+.caixa-sobre .sobre-nos .sobre-conteudo h3{
+    color: white;
+    font-size: 2.8rem;
+
+}
+.caixa-sobre .sobre-nos .sobre-conteudo p{
+    color: white;
+    font-size: 1.6rem;
+    padding: 1rem 0;   
+    line-height: 1.8;
+  
+}
+.titulo{
+    font-size: 5rem;
+    color: var(--cor-link);
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 4rem;
+
+}
+.titulo span{
+    color: white;
+    text-transform: uppercase;
+
+}
+
+.caixa-menu .caixa-cardapio {
+    
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(30rem,1fr));
+    gap: 1.5rem;
+    
+
+}
+.caixa-menu .caixa-cardapio .cardapio{
+    text-align: center;
+    border: var(--border);
+    padding: 5rem;
+    cursor: pointer;
+
+}
+
+.caixa-menu .caixa-cardapio img{
+    height: 10rem;
+    border-radius: 5rem;
+}
+.caixa-menu .caixa-cardapio h3{
+    color: white;
+    font-size: 2rem;
+    padding: 1rem 0;
+   
+}
+.caixa-menu .caixa-cardapio .preço{
+    color: white;
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+   
+}
+.caixa-menu .caixa-cardapio .preço span{
+   
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: 100;
+   
+}
+.caixa-menu .caixa-cardapio .cardapio:hover{
+    background-color: white;
+
+}
+.caixa-menu .caixa-cardapio .cardapio:hover>*{
+
+    color: black;
+
+}
+
+.avaliações{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(30rem,1fr));
+    gap: 1.5rem;
+
+}
+.caixa-avaliações .avaliações .comentario{
+    border: var(--border);
+    text-align: center;
+    padding: 3rem 2rem;
+}
+.caixa-avaliações .avaliações .comentario h3{
+    color: white;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+.caixa-avaliações .avaliações .comentario p{
+    font-size: 1.5rem;
+    color: white;
+    padding: 2rem 0;
+    line-height: 1.8;
+    font-weight: lighter;
+}
+.caixa-avaliações .avaliações .comentario .cliente{
+    width: 7rem;
+    height: 7rem;
+    border-radius:50% ;
+}
+.endereço{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.footer{
+    text-align: center;
+
+
+}
+.footer .rede-social{
+    padding: 1rem 0;
+}
+.footer .rede-social img{
+    margin: 0.5rem;
+    cursor: pointer;
+    width: 5rem;
+    height: 5rem;
+    padding: 1rem;
+    border-radius: 50%;
+
+}
+.footer .rede-social img:hover{
+    background: var(--cor-link);
+
+}

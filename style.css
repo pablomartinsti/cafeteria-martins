@@ -259,3 +259,39 @@ section{
     background: var(--cor-link);
 
 }
+
+@media (max-width:770px){
+
+    .header{
+        display: none;
+       
+    }
+    section{
+        max-width: 390px;
+    }
+
+    .home h3{
+        font-size: 5rem;
+        margin-bottom: 100px;
+    }
+    .home p{
+
+        margin: 40px 0;
+    }
+
+    .img-sobre{
+        width: 350px;
+
+    }
+    .caixa-sobre .sobre-nos{
+        display: block;
+    }
+    .endereço iframe{
+        width: 350px;
+    }
+
+
+       
+   
+
+}

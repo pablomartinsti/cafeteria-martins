@@ -1,4 +1,4 @@
-<h1>Projeto de uma cafeteria</h1>
+<h1>Site de uma cafeteria</h1>
 
 <p>Neste projeto foi utilizado</p>
 <img src = "https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" >

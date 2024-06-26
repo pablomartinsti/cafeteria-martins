@@ -284,7 +284,12 @@ section{
 
     }
     .caixa-sobre .sobre-nos{
-        display: block;
+        flex-direction: column;
+    }
+    .caixa-sobre .sobre-nos .sobre-conteudo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .endereço iframe{
         width: 350px;

@@ -291,12 +291,11 @@ section{
         flex-direction: column;
         align-items: center;
     }
+    .caixa-sobre .sobre-nos .sobre-conteudo h3 , p{
+        text-align: center;
+    }
     .endereço iframe{
         width: 350px;
     }
-
-
-       
-   
 
 }

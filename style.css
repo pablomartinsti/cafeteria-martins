@@ -1,12 +1,10 @@
-:root{
-
-    --cor-link:#FFDE59;
+:root {
+    --cor-link: #FFDE59;
     --border: 0.1rem solid #FFDE59;
     font-size: 10px;
-
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,15 +13,19 @@
     text-decoration: none;
     font-family: "Roboto", sans-serif;
 }
-body{
+
+body {
     background: rgba(0, 0, 0, 0.89);
 }
-section{
+
+section {
     padding: 3rem 2rem;
     margin: 0 auto;
     max-width: 1200px;
+
 }
-.header{
+
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -33,40 +35,72 @@ section{
     background: rgb(0, 0, 0);
 }
 
-.header section{
+.header section {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 1.5em;
     padding-bottom: 1.5rem;
-
-   
 }
-.logo{
+
+.logo {
     width: 150px;
     height: 120px;
+}
+.menu{
+        display: flex;
+    align-items: center;
 }
 .menu a {
     margin: 0 1rem;
     font-size: 1.8rem;
     color: white;
-    
+   
 }
-.menu a:hover{
+
+.menu a:hover {
     color: var(--cor-link);
     border-bottom: var(--border);
     padding-bottom: 0.5rem;
     font-size: 2rem;
 }
-.pedido img{
+
+.pedido img {
     margin: 1rem;
     width: 30px;
     cursor: pointer;
 }
-.pedido img:hover{
+
+.pedido img:hover {
     width: 40px;
 }
-.botão{
+.menu-hamburguer {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.menu-hamburguer span {
+    display: block;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.fechar-menu {
+    display: none;
+    font-size: 3rem;
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.botão {
     color: white;
     background: var(--cor-link);
     padding: 1rem 3rem;
@@ -76,226 +110,273 @@ section{
     font-size: 2rem;
     border-radius: 10px;
 }
-.caixa-home{
+
+.caixa-home {
     background: url(./assets/Design\ sem\ nome.png);
     background-position: center;
-    background-size: cover
-    ;
+    background-size: cover;
 }
-.caixa-home section{
+
+.caixa-home section {
     display: flex;
     align-items: center;
     min-height: 100vh;
 }
-.home{
+
+.home {
     max-width: 60rem;
+    
+    @media (max-width:770px){
+        text-align: center;
+    margin-top: 170px;
+    }
 }
-.home h3{
+
+.home h3 {
     color: white;
     font-size: 6rem;
-    
 }
-.home p{
+
+.home p {
     color: white;
-    font-size:1.9rem;
+    font-size: 1.9rem;
     font-weight: 100;
     line-height: 1.8;
     padding: 1rem 0;
 }
-.titulo{
+
+.titulo {
     font-size: 5rem;
     color: var(--cor-link);
     text-align: center;
     text-transform: uppercase;
     padding-bottom: 4rem;
-
-
 }
-.titulo span{
+
+.titulo span {
     color: white;
     text-transform: uppercase;
 }
-.img-sobre{
+
+.img-sobre {
     width: 600px;
     padding: 2rem;
 }
-.caixa-sobre .sobre-nos{
+
+.caixa-sobre .sobre-nos {
     display: flex;
     align-items: center;
     gap: 1.5rem;
     background: rgba(46, 46, 46, 0.527);
-
 }
-.caixa-sobre .sobre-nos .sobre-conteudo{
+
+.caixa-sobre .sobre-nos .sobre-conteudo {
     padding: 4rem;
-
 }
-.caixa-sobre .sobre-nos .sobre-conteudo h3{
+
+.caixa-sobre .sobre-nos .sobre-conteudo h3 {
     color: white;
     font-size: 2.8rem;
-
 }
-.caixa-sobre .sobre-nos .sobre-conteudo p{
+
+.caixa-sobre .sobre-nos .sobre-conteudo p {
     color: white;
     font-size: 1.6rem;
-    padding: 1rem 0;   
+    padding: 1rem 0;
     line-height: 1.8;
-  
-}
-.titulo{
-    font-size: 5rem;
-    color: var(--cor-link);
-    text-align: center;
-    text-transform: uppercase;
-    padding-bottom: 4rem;
-
-}
-.titulo span{
-    color: white;
-    text-transform: uppercase;
-
 }
 
 .caixa-menu .caixa-cardapio {
-    
     display: grid;
-    grid-template-columns:repeat(auto-fit,minmax(30rem,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
-    
-
 }
-.caixa-menu .caixa-cardapio .cardapio{
+
+.caixa-menu .caixa-cardapio .cardapio {
     text-align: center;
     border: var(--border);
     padding: 5rem;
     cursor: pointer;
-
 }
 
-.caixa-menu .caixa-cardapio img{
+.caixa-menu .caixa-cardapio img {
     height: 10rem;
     border-radius: 5rem;
 }
-.caixa-menu .caixa-cardapio h3{
+
+.caixa-menu .caixa-cardapio h3 {
     color: white;
     font-size: 2rem;
     padding: 1rem 0;
-   
 }
-.caixa-menu .caixa-cardapio .preço{
+
+.caixa-menu .caixa-cardapio .preço {
     color: white;
     font-size: 2.5rem;
     padding: 0.5rem 0;
-   
 }
-.caixa-menu .caixa-cardapio .preço span{
-   
+
+.caixa-menu .caixa-cardapio .preço span {
     font-size: 1.5rem;
     text-decoration: line-through;
     font-weight: 100;
-   
 }
-.caixa-menu .caixa-cardapio .cardapio:hover{
+
+.caixa-menu .caixa-cardapio .cardapio:hover {
     background-color: white;
-
 }
-.caixa-menu .caixa-cardapio .cardapio:hover>*{
 
+.caixa-menu .caixa-cardapio .cardapio:hover>* {
     color: black;
-
 }
 
-.avaliações{
+.avaliações {
     display: grid;
-    grid-template-columns:repeat(auto-fit,minmax(30rem,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
-
 }
-.caixa-avaliações .avaliações .comentario{
+
+.caixa-avaliações .avaliações .comentario {
     border: var(--border);
     text-align: center;
     padding: 3rem 2rem;
 }
-.caixa-avaliações .avaliações .comentario h3{
+
+.caixa-avaliações .avaliações .comentario h3 {
     color: white;
     font-size: 2rem;
     margin: 1rem 0;
 }
-.caixa-avaliações .avaliações .comentario p{
+
+.caixa-avaliações .avaliações .comentario p {
     font-size: 1.5rem;
     color: white;
     padding: 2rem 0;
     line-height: 1.8;
     font-weight: lighter;
 }
-.caixa-avaliações .avaliações .comentario .cliente{
+
+.caixa-avaliações .avaliações .comentario .cliente {
     width: 7rem;
     height: 7rem;
-    border-radius:50% ;
+    border-radius: 50%;
 }
-.endereço{
+
+.endereço {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.footer{
+
+.footer {
     text-align: center;
-
-
 }
-.footer .rede-social{
+
+.footer .rede-social {
     padding: 1rem 0;
 }
-.footer .rede-social img{
+
+.footer .rede-social img {
     margin: 0.5rem;
     cursor: pointer;
     width: 5rem;
     height: 5rem;
     padding: 1rem;
     border-radius: 50%;
-
 }
-.footer .rede-social img:hover{
+
+.footer .rede-social img:hover {
     background: var(--cor-link);
-
 }
 
-@media (max-width:770px){
+/* Estilo do Menu Hambúrguer */
+.menu-hamburguer {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+}
 
-    .header{
-        display: none;
+.menu-hamburguer span {
+    display: block;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* Responsividade */
+@media (max-width: 770px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
        
-    }
-    section{
-        max-width: 390px;
+   
     }
 
-    .home h3{
+    /* Esconder o menu principal em telas menores */
+    .menu {
+        display: none;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.9);
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .menu a {
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+
+    /* Exibir o botão do menu hambúrguer */
+    .menu-hamburguer {
+        display: flex;
+    }
+
+    .menu.menu-ativo {
+        display: flex;
+    }
+
+    section {
+        width: 90%;
+    }
+
+    .home h3 {
         font-size: 5rem;
         margin-bottom: 100px;
     }
-    .home p{
 
+    .home p {
         margin: 40px 0;
     }
 
-    .img-sobre{
+    .img-sobre {
         width: 350px;
-
     }
-    .caixa-sobre .sobre-nos{
+
+    .caixa-sobre .sobre-nos {
         flex-direction: column;
     }
-    .caixa-sobre .sobre-nos .sobre-conteudo{
+
+    .caixa-sobre .sobre-nos .sobre-conteudo {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .caixa-sobre .sobre-nos .sobre-conteudo h3 , p{
+
+    .caixa-sobre .sobre-nos .sobre-conteudo h3, p {
         text-align: center;
     }
-    .endereço iframe{
+
+    .endereço iframe {
         width: 350px;
     }
-
 }

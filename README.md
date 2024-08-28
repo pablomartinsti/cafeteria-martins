@@ -1,11 +1,14 @@
-<h1>Site de uma cafeteria</h1>
+<h1>Nome do Projeto: Cafeteria Martins</h1>
 
-<p>Neste projeto foi utilizado</p>
-<img src = "https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" >
-<img src ="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white" >
-<img src = "https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
-
-
+<p>Descrição do Projeto: O projeto Cafeteria Martins é uma aplicação frontend. Seu objetivo é oferecer uma interface amigável e responsiva para os usuários de uma cafeteria virtual, permitindo que eles visualizem os produtos disponíveis e naveguem pela loja de forma intuitiva.</p>
+<p>Motivação: Este projeto foi desenvolvido para aprimorar minhas habilidades em desenvolvimento frontend, com foco em criar interfaces modernas e responsivas</p>
+<h4>Tecnologias Utilizadas</h4>
+<li>HTML</li>
+<li>CSS</li>
+<li>JAVASCRIPT</li>
+<br>
+<br>
 Link do Projeto:https://pablomartinsti.github.io/cafeteria-martins/
+
 
 <img src = "https://github.com/pablomartinsti/cafeteria-martins/blob/main/assets/computer.png">

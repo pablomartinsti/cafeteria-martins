@@ -15,4 +15,4 @@
 Link do Projeto:https://pablomartinsti.github.io/cafeteria-martins/
 
 
-<img src = "https://github.com/pablomartinsti/cafeteria-martins/blob/main/assets/computer.png">
+<img src = "https://github.com/pablomartinsti/cafeteria-martins/blob/main/assets/Apresenta%C3%A7ao.png">

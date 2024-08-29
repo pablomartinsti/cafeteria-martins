@@ -7,12 +7,9 @@
     <li><strong>Interface Clean e Atraente:</strong> O design foi criado com foco na simplicidade e na estética, destacando a identidade visual de uma cafeteria moderna.</li>
 </ul>
 <p><strong>Tecnologias Utilizadas:</strong> HTML5, CSS3</p>
-<p><strong>Link do Projeto:</strong> <a href="https://pablomartinsti.github.io/cafeteria-martins/" target="_blank">https://pablomartinsti.github.io/cafeteria-martins/</a></p>
-
-
 <br>
 <br>
 Link do Projeto:https://pablomartinsti.github.io/cafeteria-martins/
-
-
+<br>
+<br>
 <img src = "https://github.com/pablomartinsti/cafeteria-martins/blob/main/assets/Apresenta%C3%A7ao.png">
